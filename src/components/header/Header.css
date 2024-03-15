@@ -1,0 +1,27 @@
+.header{
+    width: 100%;
+    height: 80px;
+    border: 0px solid transparent;
+    background-color: #1C2B35;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navs{
+    display: flex;
+}
+.navs li{
+    list-style-type: none;
+    padding: 15px;
+}
+.navs li a{
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+}
+.navs li a:hover{
+    text-decoration: none;
+    color: orange;
+    font-size: 17px;
+}
