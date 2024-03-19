@@ -12,12 +12,15 @@ const Shop = () => {
     },[]);
     // let [isIncart , selectItem]  = useState([]);
     let [totalPrice , priceSetter] = useState(0);
+    let [totalPrduct , setProduct] = useState([]);
     let [cntr , setCount] = useState(0);
     const handleCartBtn = (product) =>{
-        console.log(product);
+        // console.log(product);
         priceSetter(totalPrice+= parseInt(product.price));
         console.log(totalPrice);
         setCount(cntr+1);
+        setProduct([...totalPrduct,product])
+        console.log(totalPrduct)
         // isIncart.push(product.id)
         // console.log(isIncart)
     }
@@ -29,8 +32,6 @@ const Shop = () => {
                 }
 
             </div>
-
-
             <div className="shop-details">
                 <h2>Order Summery</h2>
                 <h3>Selected Items : {cntr}</h3>
